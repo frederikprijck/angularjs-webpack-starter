@@ -1,0 +1,28 @@
+sudo: false
+language: node_js
+
+cache:
+  directories:
+    - node_modules
+
+branches:
+  only:
+    - master
+
+notifications:
+  email:
+    on_failure: change
+
+node_js:
+  - '6'
+
+before_install:
+  - npm i -g npm
+  - npm install
+
+before_script:
+  - npm prune
+
+script:
+  - npm run build
+  - npm run test

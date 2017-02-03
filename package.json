@@ -4,6 +4,7 @@
   "description": "An example application demonstrating modern AngularJS development using TypeScript & WebPack.",
   "main": "index.js",
   "scripts": {
+    "build": "webpack",
     "test": "karma start karma.config.js",
     "test:coverage": "remap-istanbul -i build/coverage/coverage.json -o build/coverage/report -t html"
   },
