@@ -19,6 +19,7 @@
   "license": "MIT",
   "devDependencies": {
     "@types/angular": "^1.6.3",
+    "@types/angular-ui-router": "^1.1.36",
     "@types/core-js": "^0.9.35",
     "@types/jasmine": "^2.5.41",
     "@types/node": "^7.0.4",
@@ -41,6 +42,7 @@
     "webpack-dev-server": "^2.3.0"
   },
   "dependencies": {
-    "angular": "^1.6.1"
+    "angular": "^1.6.1",
+    "angular-ui-router": "^0.4.2"
   }
 }

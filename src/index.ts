@@ -13,12 +13,15 @@ import * as angular from 'angular';
 /**
  *  Import module to be bootstrapped
  */
-import { moduleName } from './app';
+import { moduleName as appModule } from './app/app.module';
 
 /**
  * Bootstrap the application using the imported moduleName
  */
-const bootstrapModuleName = angular.module('application.bootstrap', [moduleName]).name;
+const bootstrapModuleName = angular.module('application.bootstrap', [
+  appModule
+]).name;
+
 angular.element(function() {
   angular.bootstrap(document, [bootstrapModuleName]);
 });

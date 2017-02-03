@@ -1,6 +1,13 @@
 {
   "compilerOptions": {
     "sourceMap": true,
-    "noImplicitAny": true
+    "noImplicitAny": true,
+    "types": [
+      "node",
+      "webpack-env",
+      "angular",
+      "angular-ui-router",
+      "jasmine"
+    ]
   }
 }
