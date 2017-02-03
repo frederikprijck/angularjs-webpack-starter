@@ -13,7 +13,8 @@ This is, by no means, ment to be used blindly in production.
 - [x] Karma + Jasmine
 - [x] NPM
 - [x] Code Coverage
-- [ ] Angular 1.6
+- [x] Angular 1.6
+- [x] UI Router
 
 ## Usage
 To use this starter you can simply clone it to your prefered location by using
@@ -32,6 +33,7 @@ and install the dependencies
 Once the repository has been cloned locally, you can use the following CLI commands:
 
 ```
+npm start
 npm run build
 npm run test
 npm run test:coverage
