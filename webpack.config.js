@@ -6,6 +6,7 @@ const DESTINATION = path.resolve( __dirname, 'dist' );
 /**
  * Webpack Plugins
  */
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const LoaderOptionsPlugin = require('webpack/lib/LoaderOptionsPlugin');
 
 module.exports = {
@@ -33,20 +34,29 @@ module.exports = {
     },
 
     plugins: [
-
-      new LoaderOptionsPlugin({
-          debug: true,
-          options: {
-              tslint: {
-                  configuration: require('./tslint.json')
-              }
-          }
-      }),
+        new HtmlWebpackPlugin({
+            title: 'AngularJS - Webpack',
+            template: 'index.html',
+            inject: true
+        }),
+        new LoaderOptionsPlugin({
+            debug: true,
+            options: {
+                tslint: {
+                    configuration: require('./tslint.json')
+                }
+            }
+        }),
 
     ],
 
     devtool: 'cheap-module-source-map',
-    devServer: {},
+
+    devServer: {
+        contentBase: path.join(__dirname, ".tmp"),
+        compress: true,
+        port: 9000
+    },
 
     entry: './index.ts',
     output: {
