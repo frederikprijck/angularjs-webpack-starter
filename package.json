@@ -1,0 +1,36 @@
+{
+  "name": "angularjs-webpack-starter",
+  "version": "0.0.1",
+  "description": "An example application demonstrating modern AngularJS development using TypeScript & WebPack.",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start karma.config.js",
+    "test:coverage": "remap-istanbul -i build/coverage/coverage.json -o build/coverage/report -t html"
+  },
+  "keywords": [
+    "AngularJS",
+    "TypeScript",
+    "WebPack",
+    "NPM"
+  ],
+  "author": "Frederik Prijck <frederik.prijck@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jasmine": "^2.5.41",
+    "@types/node": "^7.0.4",
+    "@types/webpack-env": "^1.13.0",
+    "awesome-typescript-loader": "^3.0.0-beta.18",
+    "istanbul-instrumenter-loader": "^1.2.0",
+    "jasmine-core": "^2.5.2",
+    "karma": "^1.4.1",
+    "karma-coverage": "^1.1.1",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "karma-webpack": "^2.0.2",
+    "remap-istanbul": "^0.8.4",
+    "tslint": "^4.4.2",
+    "tslint-loader": "^3.3.0",
+    "typescript": "^2.1.5",
+    "webpack": "^2.2.1"
+  }
+}
