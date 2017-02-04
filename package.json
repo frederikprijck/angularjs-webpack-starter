@@ -7,7 +7,9 @@
     "build": "webpack",
     "start": "webpack-dev-server",
     "test": "karma start karma.config.js",
-    "test:coverage": "remap-istanbul -i build/coverage/coverage.json -o build/coverage/report -t html"
+    "test:coverage": "remap-istanbul -i build/coverage/coverage.json -o build/coverage/report -t html",
+    "test:coveralls": "remap-istanbul -i build/coverage/coverage.json -o build/coverage/lcov.info -t lcovonly",
+    "test:coveralls:push": "cat ./build/coverage/lcov.info | ./node_modules/.bin/coveralls"
   },
   "keywords": [
     "AngularJS",
