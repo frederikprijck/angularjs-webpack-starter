@@ -1,11 +1,15 @@
 // temporary, until https://github.com/Microsoft/TypeScript/issues/10178 is implemented
 import * as angular from 'angular';
+import { ContactsService } from './../../services/contacts.service';
 
 class AddContactController {
-    contact: { name?: string };
 
-    $onInit() {
-        this.contact = {};
+    constructor(
+        private contactsService: ContactsService
+    ) { }
+
+    add(contact: { name: string })  {
+        this.contactsService.add(contact);
     }
 }
 
@@ -17,7 +21,8 @@ export class AddContactContainer implements angular.IComponentOptions {
         this.controller = AddContactController;
         this.template = `
         <div>
-          <add-contact-form contact-added="$ctrl.add(contact)"></add-contact-form>
+          <add-contact-form contact-added="$ctrl.add($event.contact)"></add-contact-form>
+          <a ui-sref="contacts">Back</a>
         </div>
         `;
     }

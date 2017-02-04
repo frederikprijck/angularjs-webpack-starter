@@ -14,6 +14,11 @@ import { ContactsContainer } from './containers/contacts/contacts.container';
 import { AddContactContainer } from './containers/add-contact/add-contact.container';
 
 /**
+ * Services
+ */
+import { ContactsService } from './services/contacts.service';
+
+/**
  * Routing
  */
 import { routing } from './contacts.routes';
@@ -34,6 +39,11 @@ export const moduleName =
      */
     .component('contacts', new ContactsContainer())
     .component('addContact', new AddContactContainer())
+
+    /**
+     * Services
+     */
+    .service('contactsService', ContactsService)
 
     /**
      * Configuration
