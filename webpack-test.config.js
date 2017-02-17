@@ -15,7 +15,7 @@ module.exports = {
             {
                 test: /\.ts$/,
                 exclude: [ /node_modules/ ],
-                loader: 'awesome-typescript-loader'
+                use: 'awesome-typescript-loader'
             },
             
             {
@@ -24,7 +24,7 @@ module.exports = {
                     /node_modules/,
                     /\.spec\.ts$/
                 ],
-                loader: 'istanbul-instrumenter-loader',
+                use: 'istanbul-instrumenter-loader',
                 enforce: 'post'
             },
 
