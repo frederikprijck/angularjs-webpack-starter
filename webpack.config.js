@@ -29,6 +29,13 @@ module.exports = {
                 test: /\.ts$/,
                 exclude: [ /node_modules/ ],
                 loader: 'awesome-typescript-loader'
+            },
+
+            {
+                test: /.html$/,
+                loaders: [
+                    'html-loader'
+                ]
             }
         ]
     },

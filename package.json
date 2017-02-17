@@ -29,6 +29,7 @@
     "awesome-typescript-loader": "^3.0.0-beta.18",
     "core-js": "^2.4.1",
     "coveralls": "^2.11.15",
+    "html-loader": "^0.4.4",
     "html-webpack-plugin": "^2.28.0",
     "istanbul-instrumenter-loader": "^1.2.0",
     "jasmine-core": "^2.5.2",

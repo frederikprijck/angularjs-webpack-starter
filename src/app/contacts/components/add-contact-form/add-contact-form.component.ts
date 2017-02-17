@@ -26,11 +26,6 @@ export class AddContactForm implements angular.IComponentOptions {
         this.bindings = {
             contactAdded: '&'
         };
-        this.template = `
-        <form name="addContactForm" ng-submit="$ctrl.submit()" novalidate>
-            <input type="text" ng-model="$ctrl.name" placeholder="name" required>
-            <button type="submit" ng-disabled="addContactForm.$invalid">Add</button>
-        </form>
-        `;
+        this.template = require('./add-contact-form.component.html');
     }
 }
