@@ -26,6 +26,11 @@ module.exports = {
                 ],
                 loader: 'istanbul-instrumenter-loader',
                 enforce: 'post'
+            },
+
+            {
+                test: /.html$/,
+                use: 'html-loader'
             }
         ]
     },
