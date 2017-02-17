@@ -3,7 +3,8 @@ module.exports = function(config) {
     singleRun: true,
     
     browsers: [
-      'PhantomJS'
+      'PhantomJS',
+      'Chrome'
     ],
 
     frameworks: [
@@ -11,13 +12,13 @@ module.exports = function(config) {
     ],
 
     files: [
-      './src/index.spec.ts'
+      './src/index.spec.js'
     ],
 
     reporters: ['progress', 'coverage'],
 
     preprocessors: {
-      './src/index.spec.ts': ['coverage', 'webpack']
+      './src/index.spec.js': ['coverage', 'webpack']
     },
 
     webpack: require('./webpack-test.config'),
@@ -37,6 +38,7 @@ module.exports = function(config) {
       require('karma-jasmine'),
       require('karma-coverage'),
       require('karma-phantomjs-launcher'),
+      require('karma-chrome-launcher'),
       require('karma-webpack')
     ]
   });
