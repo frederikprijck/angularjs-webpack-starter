@@ -16,7 +16,7 @@ This is, by no means, ment to be used blindly in production.
 - [x] Karma + Jasmine
 - [x] NPM
 - [x] Code Coverage
-- [x] Angular 1.6
+- [x] AngularJS 1.6
 - [x] UI Router
 
 ## Usage
