@@ -33,6 +33,7 @@ module.exports = {
 
             {
                 test: /.html$/,
+                exclude: /index.html$/,
                 use: 'html-loader'
             }
         ]
