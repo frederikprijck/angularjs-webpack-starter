@@ -14,6 +14,11 @@ module.exports = {
         rules: [
             {
                 test: /\.ts$/,
+                exclude: /node_modules/,
+                use: 'tslint-loader',
+                enforce: 'pre'
+            },{
+                test: /\.ts$/,
                 exclude: [ /node_modules/ ],
                 use: 'awesome-typescript-loader'
             },
@@ -34,7 +39,6 @@ module.exports = {
             }
         ]
     },
-
     devtool: 'cheap-module-source-map',
     devServer: {}
 };
