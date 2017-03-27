@@ -2,12 +2,9 @@
   "compilerOptions": {
     "sourceMap": true,
     "noImplicitAny": true,
-    "types": [
-      "node",
-      "webpack-env",
-      "angular",
-      "angular-ui-router",
-      "jasmine"
+    "lib": [
+      "es6",
+      "dom"
     ]
   }
 }
