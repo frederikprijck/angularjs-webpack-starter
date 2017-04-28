@@ -18,6 +18,7 @@ This is, by no means, ment to be used blindly in production.
 - [x] Code Coverage
 - [x] AngularJS 1.6
 - [x] UI Router 1.0.0
+- [x] Strict DI using [ngAnnotate](https://github.com/olov/ng-annotate)
 
 ## Usage
 To use this starter you can simply clone it to your prefered location by using

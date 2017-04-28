@@ -6,7 +6,9 @@ class AddContactController {
 
     constructor(
         private contactsService: ContactsService
-    ) { }
+    ) {
+        'ngInject';
+    }
 
     add(contact: { name: string })  {
         this.contactsService.add(contact);

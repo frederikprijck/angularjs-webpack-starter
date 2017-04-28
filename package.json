@@ -41,6 +41,7 @@
     "karma-jasmine": "^1.1.0",
     "karma-phantomjs-launcher": "^1.0.4",
     "karma-webpack": "^2.0.3",
+    "ng-annotate-loader": "^0.5.0",
     "remap-istanbul": "^0.9.5",
     "tslint": "^5.1.0",
     "tslint-loader": "^3.5.3",

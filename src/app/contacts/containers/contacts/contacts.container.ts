@@ -7,7 +7,9 @@ class ContactsController {
 
     constructor(
         private contactsService: ContactsService
-    ) { }
+    ) {
+        'ngInject';
+     }
 
     $onInit() {
         this.contactsService.getAll()

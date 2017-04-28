@@ -28,7 +28,10 @@ module.exports = {
             {
                 test: /\.ts$/,
                 exclude: [ /node_modules/ ],
-                use: 'awesome-typescript-loader'
+                use: [
+                    'ng-annotate-loader',
+                    'awesome-typescript-loader'
+                ]
             },
 
             {

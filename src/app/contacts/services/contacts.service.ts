@@ -7,7 +7,7 @@ export class ContactsService {
     constructor(
         private $q: angular.IQService
     ) {
-
+        'ngInject';
     }
 
     getAll() {
