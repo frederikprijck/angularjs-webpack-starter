@@ -21,11 +21,13 @@
   "license": "MIT",
   "devDependencies": {
     "@types/angular": "^1.6.16",
+    "@types/angular-mocks": "^1.5.9",
     "@types/angular-ui-router": "^1.1.36",
     "@types/core-js": "^0.9.41",
     "@types/jasmine": "^2.5.47",
     "@types/node": "^7.0.14",
     "@types/webpack-env": "^1.13.0",
+    "angular-mocks": "^1.6.4",
     "awesome-typescript-loader": "^3.1.2",
     "core-js": "^2.4.1",
     "coveralls": "^2.13.1",
