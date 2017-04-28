@@ -49,7 +49,8 @@ module.exports = {
             debug: true,
             options: {
                 tslint: {
-                    configuration: require('./tslint.json')
+                    configuration: require('./tslint.json'),
+                    typeCheck: true
                 }
             }
         }),
