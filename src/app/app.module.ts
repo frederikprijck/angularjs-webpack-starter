@@ -2,7 +2,7 @@
 import * as angular from 'angular';
 
 /**
- * Application Modules
+ * Import Application Modules
  */
 import { moduleName as coreModule } from './core/core.module';
 import { moduleName as contactsModule } from './contacts/contacts.module';

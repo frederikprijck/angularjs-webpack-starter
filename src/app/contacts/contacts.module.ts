@@ -2,24 +2,24 @@
 import * as angular from 'angular';
 
 /**
- * Components
+ * Import Module Components
  */
 import { AddContactForm } from './components/add-contact-form/add-contact-form.component';
 import { ContactList } from './components/contact-list/contact-list.component';
 
 /**
- * Containers
+ * Import Module Containers
  */
 import { ContactsContainer } from './containers/contacts/contacts.container';
 import { AddContactContainer } from './containers/add-contact/add-contact.container';
 
 /**
- * Services
+ * Import Module Services
  */
 import { ContactsService } from './services/contacts.service';
 
 /**
- * Routing
+ * Import Module Routing
  */
 import { routing } from './contacts.routes';
 
@@ -29,24 +29,24 @@ export const moduleName =
     ])
 
     /**
-     * Components
+     * Register Module Components
      */
     .component('addContactForm', new AddContactForm())
     .component('contactList', new ContactList())
 
     /**
-     * Containers
+     * Register Module Containers
      */
     .component('contacts', new ContactsContainer())
     .component('addContact', new AddContactContainer())
 
     /**
-     * Services
+     * Register Module Services
      */
     .service('contactsService', ContactsService)
 
     /**
-     * Configuration
+     * Register Module Configuration
      */
     .config(routing)
     .name;

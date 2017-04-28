@@ -2,13 +2,13 @@
 import * as angular from 'angular';
 
 /**
- * Components
+ * Import Module Components
  */
 import { App } from './components/app/app.component';
 import { Root } from './components/root/root.component';
 
 /**
- * Configuration
+ * Import Module Configuration
  */
 import { configuration } from './core.configuration';
 import { routing } from './core.routes';
@@ -19,13 +19,13 @@ export const moduleName =
     ])
 
     /**
-     * Components
+     * Register Module Components
      */
     .component('app', new App())
     .component('root', new Root())
 
     /**
-     * Configuration
+     * Register Module Configuration
      */
     .config(configuration)
     .config(routing)
