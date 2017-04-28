@@ -17,7 +17,7 @@ This is, by no means, ment to be used blindly in production.
 - [x] NPM
 - [x] Code Coverage
 - [x] AngularJS 1.6
-- [x] UI Router
+- [x] UI Router 1.0.0
 
 ## Usage
 To use this starter you can simply clone it to your prefered location by using

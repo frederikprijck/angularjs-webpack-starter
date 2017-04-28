@@ -50,6 +50,6 @@
   },
   "dependencies": {
     "angular": "^1.6.4",
-    "angular-ui-router": "^0.4.2"
+    "angular-ui-router": "^1.0.0-rc.1"
   }
 }

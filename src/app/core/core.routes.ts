@@ -3,7 +3,7 @@ export const routing = ($stateProvider: angular.ui.IStateProvider, $urlRouterPro
       .state('app', {
         abstract: true,
         url: '/app',
-        template: '<app></app>'
+        component: 'app'
       });
 
       $urlRouterProvider.otherwise('/app/contact');

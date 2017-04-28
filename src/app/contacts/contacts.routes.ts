@@ -5,12 +5,12 @@ export const routing = ($stateProvider: angular.ui.IStateProvider) => {
       .state('add-contact', {
         parent: 'app',
         url: '/contact/add',
-        template: '<add-contact></add-contact>'
+        component: 'addContact'
       })
 
       .state('contacts', {
         parent: 'app',
         url: '/contact',
-        template: '<contacts></contacts>'
+        component: 'contacts'
       });
 };
