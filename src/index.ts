@@ -5,6 +5,11 @@ import './polyfills';
 import './vendor';
 
 /**
+ * Import the global styles
+ */
+import './index.scss';
+
+/**
  * Temporary Import angular
  * see: https://github.com/Microsoft/TypeScript/issues/10178
  */

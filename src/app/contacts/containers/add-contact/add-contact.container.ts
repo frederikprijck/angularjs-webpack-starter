@@ -26,7 +26,7 @@ export class AddContactContainer implements angular.IComponentOptions {
         this.template = `
         <div>
           <add-contact-form contact-added="$ctrl.add($event.contact)"></add-contact-form>
-          <a ui-sref="contacts">Back</a>
+          <a class="btn btn-default" ui-sref="contacts">Back</a>
         </div>
         `;
     }

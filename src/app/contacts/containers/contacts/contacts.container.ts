@@ -37,7 +37,7 @@ export class ContactsContainer implements angular.IComponentOptions {
         this.template = `
             <div>
                 <contact-list contacts="$ctrl.contacts" contact-removed="$ctrl.remove($event.contact)"></contact-list>
-                <a ui-sref="add-contact">Add</a>
+                <a class="btn btn-primary" ui-sref="add-contact">Add</a>
             </div>
         `;
     }
