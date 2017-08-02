@@ -6,7 +6,6 @@ export class Root implements angular.IComponentOptions {
 
     constructor() {
         this.template = `
-        Hi.
         <div ui-view></div>
         `;
     }
