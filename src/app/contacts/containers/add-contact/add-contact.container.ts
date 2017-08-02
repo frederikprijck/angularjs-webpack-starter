@@ -5,13 +5,15 @@ import { ContactsService } from './../../services/contacts.service';
 class AddContactController {
 
     constructor(
-        private contactsService: ContactsService
+        private contactsService: ContactsService,
+        private $state: angular.ui.IStateService
     ) {
         'ngInject';
     }
 
     add(contact: { name: string })  {
         this.contactsService.add(contact);
+        this.$state.go('contacts');
     }
 }
 
