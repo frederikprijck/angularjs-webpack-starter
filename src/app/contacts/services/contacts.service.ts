@@ -17,4 +17,8 @@ export class ContactsService {
     add(contact: { name: string }) {
         this.contacts.push(contact);
     }
+
+    remove(contactName: string) {
+        this.contacts = this.contacts.filter(contact => contact.name !== contactName);
+    }
 }
