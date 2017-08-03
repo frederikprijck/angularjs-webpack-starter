@@ -14,6 +14,8 @@ This is, by no means, ment to be used blindly in production.
 - [x] @types
 - [x] Webpack 2
 - [x] Karma + Jasmine
+- [ ] Protractor
+- [x] Styling using SASS
 - [x] NPM
 - [x] Code Coverage
 - [x] AngularJS 1.6
