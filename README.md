@@ -21,6 +21,7 @@ This is, by no means, ment to be used blindly in production.
 - [x] AngularJS 1.6
 - [x] UI Router 1.0.0
 - [x] Strict DI using [ngAnnotate](https://github.com/olov/ng-annotate)
+- [x] Production build containing chunks
 
 ## Usage
 To use this starter you can simply clone it to your prefered location by using
