@@ -5,9 +5,11 @@
   "main": "index.js",
   "scripts": {
     "build": "npm run build:dev",
+    "prebuild:dev": "npm run clean:dev",
     "build:dev": "webpack",
     "prebuild:prd": "npm run clean:prd",
     "build:prd": "webpack --config webpack-prd.config.js",
+    "clean:dev": "rm -rf .tmp",
     "clean:prd": "rm -rf public",
     "start": "npm run serve:dev",
     "serve:dev": "webpack-dev-server",
