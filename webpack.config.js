@@ -1,7 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
 const ROOT = path.resolve( __dirname, 'src' );
-const DESTINATION = path.resolve( __dirname, 'dist' );
+const DESTINATION = path.resolve( __dirname, '.tmp' );
 
 /**
  * Webpack Plugins
@@ -80,7 +80,7 @@ module.exports = {
 
     entry: './index.ts',
     output: {
-        path: path.join(process.cwd(), '.tmp'),
+        path: DESTINATION,
         filename: 'index.js'
     },
 };
