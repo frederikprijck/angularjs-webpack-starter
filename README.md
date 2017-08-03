@@ -12,7 +12,7 @@ This is, by no means, ment to be used blindly in production.
 - [x] TypeScript 2
 - [x] TSLint
 - [x] @types
-- [x] Webpack 2
+- [x] Webpack 3 + Webpack dev server
 - [x] Karma + Jasmine
 - [ ] Protractor
 - [x] Styling using SASS
