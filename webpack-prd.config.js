@@ -8,7 +8,7 @@ const DESTINATION = path.resolve( __dirname, 'public' );
  */
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const LoaderOptionsPlugin = require('webpack/lib/LoaderOptionsPlugin');
-const UglifyJsPlugin = require('webpack/lib/optimize/UglifyJsPlugin');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = {
