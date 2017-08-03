@@ -46,5 +46,11 @@ npm run test
 npm run test:coverage
 ```
 
+To run the production build locally, use:
+
+```
+npm run serve:dist
+```
+
 ## Contributions
 Feel free to open an issue or create a PR.
