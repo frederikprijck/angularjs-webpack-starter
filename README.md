@@ -46,7 +46,13 @@ npm run test
 npm run test:coverage
 ```
 
-To run the production build locally, use:
+To run the production build, use:
+
+```
+npm run build:dist
+```
+
+If you would like to test the production build by running `http-server`, use
 
 ```
 npm run serve:dist
