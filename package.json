@@ -64,8 +64,8 @@
     "webpack-dev-server": "^2.6.1"
   },
   "dependencies": {
+    "@uirouter/angularjs": "1.0.3",
     "angular": "^1.6.5",
-    "angular-ui-router": "1.0.3",
     "bootstrap": "^3.3.7"
   }
 }
