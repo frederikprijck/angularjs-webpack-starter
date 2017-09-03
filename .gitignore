@@ -4,3 +4,7 @@
 build
 node_modules
 public
+
+# code formatting configs
+.editorconfig
+.prettierrc
