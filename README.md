@@ -1,4 +1,6 @@
 # angularjs-webpack-starter
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/frederikprijck/angularjs-webpack-starter.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/frederikprijck/angularjs-webpack-starter.svg?branch=master)](https://travis-ci.org/frederikprijck/angularjs-webpack-starter)
 [![Dependencies](https://david-dm.org/frederikprijck/angularjs-webpack-starter/status.svg)](https://david-dm.org/frederikprijck/angularjs-webpack-starter)
 [![DepDependencies](https://david-dm.org/frederikprijck/angularjs-webpack-starter/dev-status.svg)](https://david-dm.org/frederikprijck/angularjs-webpack-starter?type=dev)
