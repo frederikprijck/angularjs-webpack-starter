@@ -31,19 +31,19 @@ export const moduleName =
     /**
      * Register Module Components
      */
-    .component('addContactForm', new AddContactForm())
-    .component('contactList', new ContactList())
+    .component(AddContactForm.selector, AddContactForm)
+    .component(ContactList.selector, ContactList)
 
     /**
      * Register Module Containers
      */
-    .component('contacts', new ContactsContainer())
-    .component('addContact', new AddContactContainer())
+    .component(ContactsContainer.selector, ContactsContainer)
+    .component(AddContactContainer.selector, AddContactContainer)
 
     /**
      * Register Module Services
      */
-    .service('contactsService', ContactsService)
+    .service(ContactsService.selector, ContactsService)
 
     /**
      * Register Module Configuration

@@ -14,15 +14,11 @@ class AddContactFormController {
 }
 
 export class AddContactForm implements angular.IComponentOptions {
-    template: string;
-    bindings: any;
-    controller: any;
+    static selector = 'addContactForm';
 
-    constructor() {
-        this.controller = AddContactFormController;
-        this.bindings = {
-            contactAdded: '&'
-        };
-        this.template = require('./add-contact-form.component.html');
-    }
+    static template = require('./add-contact-form.component.html');
+    static bindings = {
+        contactAdded: '&'
+    };
+    static controller = AddContactFormController;
 }

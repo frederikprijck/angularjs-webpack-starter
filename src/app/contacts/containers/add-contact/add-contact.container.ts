@@ -16,16 +16,12 @@ class AddContactController {
 }
 
 export class AddContactContainer implements angular.IComponentOptions {
-    template: string;
-    controller: any;
-
-    constructor() {
-        this.controller = AddContactController;
-        this.template = `
-        <div>
-          <add-contact-form contact-added="$ctrl.add($event.contact)"></add-contact-form>
-          <a class="btn btn-default" ui-sref="contacts">Back</a>
-        </div>
-        `;
-    }
+    static selector = 'addContact';
+    static controller = AddContactController;
+    static template = `
+    <div>
+      <add-contact-form contact-added="$ctrl.add($event.contact)"></add-contact-form>
+      <a class="btn btn-default" ui-sref="contacts">Back</a>
+    </div>
+    `;
 }

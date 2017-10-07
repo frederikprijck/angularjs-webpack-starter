@@ -1,5 +1,5 @@
 export class ContactsService {
-
+    static selector = 'contactsService';
     contacts: { name: string }[] = [
         { name: 'John' }
     ];

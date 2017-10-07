@@ -6,12 +6,12 @@ describe('AddContactForm component', () => {
     beforeEach(() => {
         angular
             .module('app', [])
-            .component('addContactForm', new AddContactForm());
+            .component(AddContactForm.selector, AddContactForm);
         angular.mock.module('app');
     });
 
     it('should exist', angular.mock.inject(($componentController: any) => {
-        const component = $componentController('addContactForm', {}, {});
+        const component = $componentController(AddContactForm.selector, {}, {});
 
         expect(component).toBeDefined();
     }));
@@ -20,7 +20,7 @@ describe('AddContactForm component', () => {
         const bindings = {
             contactAdded: jasmine.createSpy('contactAdded')
         };
-        const component = $componentController('addContactForm', {}, bindings);
+        const component = $componentController(AddContactForm.selector, {}, bindings);
         component.submit();
 
         expect(bindings.contactAdded).toHaveBeenCalled();
@@ -30,7 +30,7 @@ describe('AddContactForm component', () => {
         const bindings = {
             contactAdded: jasmine.createSpy('contactAdded')
         };
-        const component = $componentController('addContactForm', {}, bindings);
+        const component = $componentController(AddContactForm.selector, {}, bindings);
         component.name = 'John';
         component.submit();
 
@@ -41,7 +41,7 @@ describe('AddContactForm component', () => {
         const bindings = {
             contactAdded: jasmine.createSpy('contactAdded')
         };
-        const component = $componentController('addContactForm', {}, bindings);
+        const component = $componentController(AddContactForm.selector, {}, bindings);
         component.name = 'John';
         component.submit();
 

@@ -27,16 +27,12 @@ class ContactsController {
 }
 
 export class ContactsContainer implements angular.IComponentOptions {
-    template: string;
-    controller: any;
-
-    constructor() {
-        this.controller = ContactsController;
-        this.template = `
-            <div>
-                <contact-list contacts="$ctrl.contacts" contact-removed="$ctrl.remove($event.contact)"></contact-list>
-                <a class="btn btn-primary" ui-sref="add-contact">Add</a>
-            </div>
-        `;
-    }
+    static selector = 'contacts';
+    static controller = ContactsController;
+    static template = `
+    <div>
+        <contact-list contacts="$ctrl.contacts" contact-removed="$ctrl.remove($event.contact)"></contact-list>
+        <a class="btn btn-primary" ui-sref="add-contact">Add</a>
+    </div>
+    `;
 }

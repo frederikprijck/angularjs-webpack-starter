@@ -21,8 +21,8 @@ export const moduleName =
     /**
      * Register Module Components
      */
-    .component('app', new App())
-    .component('root', new Root())
+    .component(App.selector, App)
+    .component(Root.selector, Root)
 
     /**
      * Register Module Configuration
