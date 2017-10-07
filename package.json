@@ -6,13 +6,13 @@
   "scripts": {
     "build": "npm run build:dev",
     "prebuild:dev": "npm run clean:dev",
-    "build:dev": "webpack",
+    "build:dev": "webpack --config webpack-dev.config.js",
     "prebuild:prd": "npm run clean:prd",
     "build:prd": "webpack --config webpack-prd.config.js",
     "clean:dev": "rimraf .tmp",
     "clean:prd": "rimraf public",
     "start": "npm run serve:dev",
-    "serve:dev": "webpack-dev-server",
+    "serve:dev": "webpack-dev-server --config webpack-dev.config.js",
     "preserve:prd": "npm run build:prd",
     "serve:prd": "http-server",
     "test": "karma start karma.config.js",
@@ -65,7 +65,8 @@
     "typescript": "^2.5.3",
     "uglifyjs-webpack-plugin": "^1.0.0-beta.2",
     "webpack": "^3.6.0",
-    "webpack-dev-server": "^2.9.1"
+    "webpack-dev-server": "^2.9.1",
+    "webpack-merge": "^4.1.0"
   },
   "dependencies": {
     "@uirouter/angularjs": "1.0.8",
