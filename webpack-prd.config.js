@@ -101,7 +101,6 @@ module.exports = {
     entry: './index.ts',
     output: {
         path: DESTINATION,
-        filename: 'js/[name]-bundle-[hash].js',
-        chunkFilename: '[name]-chunk-[hash].js'
+        filename: 'js/[name]-bundle-[chunkhash].js'
     },
 };
