@@ -8,6 +8,7 @@ cache:
 branches:
   only:
     - master
+    - /^greenkeeper/.*$/
 
 notifications:
   email:
