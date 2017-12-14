@@ -27,7 +27,9 @@ module.exports = {
                     }
                 },
                 enforce: 'pre'
-            },{
+            },
+            
+            {
                 test: /\.ts$/,
                 exclude: [ /node_modules/ ],
                 use: 'awesome-typescript-loader'
@@ -73,6 +75,6 @@ module.exports = {
 
     ],
 
-    devtool: 'cheap-module-source-map',
+    devtool: 'inline-source-map',
     devServer: {}
 };

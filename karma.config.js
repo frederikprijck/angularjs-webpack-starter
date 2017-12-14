@@ -3,21 +3,21 @@ module.exports = function(config) {
   var browsers = ['PhantomJS'];
 
   if (process.env.TRAVIS) {
-      browsers.push('Chrome_Travis');
+    browsers.push('Chrome_Travis');
   } else {
     browsers.push('Chrome');
   }
 
   config.set({
     singleRun: true,
-    
+
     browsers: browsers,
 
     customLaunchers: {
-        Chrome_Travis: {
-            base: 'Chrome',
-            flags: ['--no-sandbox']
-        }
+      Chrome_Travis: {
+        base: 'Chrome',
+        flags: ['--no-sandbox']
+      }
     },
 
     frameworks: [
@@ -31,7 +31,7 @@ module.exports = function(config) {
     reporters: ['progress', 'coverage'],
 
     preprocessors: {
-      './src/index.spec.js': ['coverage', 'webpack']
+      './src/index.spec.js': ['coverage', 'webpack', 'sourcemap'],
     },
 
     webpack: require('./webpack-test.config'),
@@ -52,7 +52,8 @@ module.exports = function(config) {
       require('karma-coverage'),
       require('karma-phantomjs-launcher'),
       require('karma-chrome-launcher'),
-      require('karma-webpack')
+      require('karma-webpack'),
+      require('karma-sourcemap-loader')
     ]
   });
 };
