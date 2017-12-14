@@ -27,8 +27,8 @@ describe('Contacts container', () => {
     }));
 
     it('should call `contactsService.remove` when removing', angular.mock.inject((
-        $componentController: any, 
-        contactsService: any, 
+        $componentController: any,
+        contactsService: any,
         $q: angular.IQService) => {
         const component = $componentController(ContactsContainer.selector, {}, {});
         _contactsService.getAll.and.returnValue($q.resolve());
@@ -40,8 +40,8 @@ describe('Contacts container', () => {
     }));
 
     it('should call `contactsService.getAll` on init', angular.mock.inject((
-        $componentController: any, 
-        contactsService: any, 
+        $componentController: any,
+        contactsService: any,
         $q: angular.IQService) => {
         const component = $componentController(ContactsContainer.selector, {}, {});
         _contactsService.getAll.and.returnValue($q.resolve());
