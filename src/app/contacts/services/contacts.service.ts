@@ -27,6 +27,6 @@ export class ContactsService {
   }
 
   remove(id: number) {
-      this.contacts = this.contacts.filter(contact => contact.id !== id);
+    this.contacts = this.contacts.filter(contact => contact.id !== id);
   }
 }
