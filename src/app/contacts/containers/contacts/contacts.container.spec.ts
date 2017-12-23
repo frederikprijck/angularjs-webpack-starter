@@ -32,11 +32,9 @@ describe('Contacts container', () => {
         $q: angular.IQService) => {
         const component = $componentController(ContactsContainer.selector, {}, {});
         _contactsService.getAll.and.returnValue($q.resolve());
-        component.remove({
-            name: 'John'
-        });
+        component.remove(1);
 
-        expect(contactsService.remove).toHaveBeenCalledWith('John');
+        expect(contactsService.remove).toHaveBeenCalledWith(1);
     }));
 
     it('should call `contactsService.getAll` on init', angular.mock.inject((

@@ -31,20 +31,23 @@ describe('AddContactForm component', () => {
             contactAdded: jasmine.createSpy('contactAdded')
         };
         const component = $componentController(AddContactForm.selector, {}, bindings);
-        component.name = 'John';
+        component.firstName = 'John';
+        component.lastName = 'Doe';
         component.submit();
 
-        expect(bindings.contactAdded).toHaveBeenCalledWith({ $event: { contact: { name: 'John' }}});
+        expect(bindings.contactAdded).toHaveBeenCalledWith({ $event: { contact: { firstName: 'John', lastName: 'Doe' }}});
     }));
 
-    it('should clear `name` when submitting', angular.mock.inject(($componentController: any) => {
+    it('should clear `firstName` and `lastName` when submitting', angular.mock.inject(($componentController: any) => {
         const bindings = {
             contactAdded: jasmine.createSpy('contactAdded')
         };
         const component = $componentController(AddContactForm.selector, {}, bindings);
-        component.name = 'John';
+        component.firstName = 'John';
+        component.lastName = 'Doe';
         component.submit();
 
-        expect(component.name).toBe('');
+        expect(component.firstName).toBe('');
+        expect(component.lastName).toBe('');
     }));
 });
