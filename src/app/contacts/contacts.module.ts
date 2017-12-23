@@ -24,29 +24,29 @@ import { ContactsService } from './services/contacts.service';
 import { routing } from './contacts.routes';
 
 export const moduleName =
-    angular.module('application.contacts', [
-        'ui.router'
-    ])
+  angular.module('application.contacts', [
+      'ui.router'
+  ])
 
-    /**
-     * Register Module Components
-     */
-    .component(AddContactForm.selector, AddContactForm)
-    .component(ContactList.selector, ContactList)
+  /**
+   * Register Module Components
+   */
+  .component(AddContactForm.selector, AddContactForm)
+  .component(ContactList.selector, ContactList)
 
-    /**
-     * Register Module Containers
-     */
-    .component(ContactsContainer.selector, ContactsContainer)
-    .component(AddContactContainer.selector, AddContactContainer)
+  /**
+   * Register Module Containers
+   */
+  .component(ContactsContainer.selector, ContactsContainer)
+  .component(AddContactContainer.selector, AddContactContainer)
 
-    /**
-     * Register Module Services
-     */
-    .service(ContactsService.selector, ContactsService)
+  /**
+   * Register Module Services
+   */
+  .service(ContactsService.selector, ContactsService)
 
-    /**
-     * Register Module Configuration
-     */
-    .config(routing)
-    .name;
+  /**
+   * Register Module Configuration
+   */
+  .config(routing)
+  .name;

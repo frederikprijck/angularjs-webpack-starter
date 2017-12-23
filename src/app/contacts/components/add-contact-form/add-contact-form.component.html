@@ -1,8 +1,11 @@
 <form name="addContactForm" ng-submit="$ctrl.submit()" novalidate>
-     <div class="input-group">
-      <input type="text" class="form-control" ng-model="$ctrl.name" placeholder="contact name" required>
-      <span class="input-group-btn">
-        <button class="btn btn-default" type="submit" ng-disabled="addContactForm.$invalid">Add</button>
-      </span>
-    </div>
+  <div class="form-group">
+    <label>Firstname</label>
+    <input type="text" class="form-control" ng-model="$ctrl.firstName" placeholder="firstname" required>
+  </div>
+  <div class="form-group">
+    <label>Lastname</label>
+    <input type="text" class="form-control" ng-model="$ctrl.lastName" placeholder="lastname" required>
+  </div>
+  <button class="btn btn-primary btn-block" type="submit" ng-disabled="addContactForm.$invalid">Add</button>
 </form>
