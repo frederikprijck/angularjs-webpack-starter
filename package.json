@@ -34,7 +34,7 @@
     "@types/angular-ui-router": "^1.1.40",
     "@types/core-js": "^0.9.43",
     "@types/jasmine": "^2.8.2",
-    "@types/node": "^8.5.1",
+    "@types/node": "^9.3.0",
     "@types/webpack-env": "^1.13.3",
     "angular-mocks": "^1.6.7",
     "awesome-typescript-loader": "^3.4.1",
