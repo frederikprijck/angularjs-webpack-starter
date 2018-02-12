@@ -71,7 +71,7 @@
     "webpack-merge": "^4.1.2"
   },
   "dependencies": {
-    "@uirouter/angularjs": "1.0.14",
+    "@uirouter/angularjs": "1.0.15",
     "angular": "^1.6.7",
     "bootstrap": "^3.3.7"
   }
