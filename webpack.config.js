@@ -1,5 +1,4 @@
 const path = require('path');
-const webpack = require('webpack');
 const ROOT = path.resolve( __dirname, 'src' );
 
 /**
