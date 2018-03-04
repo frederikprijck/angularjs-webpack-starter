@@ -5,7 +5,7 @@ const DESTINATION = path.resolve( __dirname, '.tmp' );
 
 module.exports = webpackMerge(commonConfig, {
     devtool: 'cheap-module-source-map',
-
+    mode: 'development',
     devServer: {
         contentBase: path.join(__dirname, ".tmp"),
         compress: true,
