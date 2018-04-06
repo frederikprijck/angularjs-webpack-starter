@@ -37,7 +37,7 @@
     "@types/node": "^9.4.7",
     "@types/webpack-env": "^1.13.5",
     "angular-mocks": "^1.6.9",
-    "awesome-typescript-loader": "^4.0.1-0",
+    "awesome-typescript-loader": "^5.0.0",
     "core-js": "^2.5.3",
     "coveralls": "^3.0.0",
     "css-loader": "^0.28.11",
