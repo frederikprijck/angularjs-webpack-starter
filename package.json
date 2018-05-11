@@ -72,7 +72,7 @@
   },
   "dependencies": {
     "@uirouter/angularjs": "1.0.18",
-    "angular": "^1.6.9",
+    "angular": "1.6.10",
     "bootstrap": "^3.3.7"
   }
 }
