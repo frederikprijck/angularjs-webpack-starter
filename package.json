@@ -36,7 +36,7 @@
     "@types/jasmine": "^2.8.6",
     "@types/node": "^10.3.5",
     "@types/webpack-env": "^1.13.5",
-    "angular-mocks": "^1.6.9",
+    "angular-mocks": "1.6.10",
     "awesome-typescript-loader": "^5.0.0",
     "core-js": "^2.5.3",
     "coveralls": "^3.0.0",
