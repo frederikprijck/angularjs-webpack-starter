@@ -32,7 +32,7 @@
     "@types/angular": "^1.6.43",
     "@types/angular-mocks": "^1.5.11",
     "@types/angular-ui-router": "^1.1.40",
-    "@types/core-js": "^0.9.46",
+    "@types/core-js": "^2.5.0",
     "@types/jasmine": "^2.8.6",
     "@types/node": "^9.4.7",
     "@types/webpack-env": "^1.13.5",
