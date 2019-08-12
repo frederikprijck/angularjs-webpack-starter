@@ -29,7 +29,7 @@
   "author": "Frederik Prijck <frederik.prijck@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "@types/angular": "^1.6.51",
+    "@types/angular": "1.6.55",
     "@types/angular-mocks": "^1.7.0",
     "@types/angular-ui-router": "^1.1.40",
     "@types/core-js": "^2.5.0",
