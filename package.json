@@ -58,7 +58,7 @@
     "ng-annotate-loader": "^0.6.1",
     "node-sass": "^4.9.4",
     "remap-istanbul": "^0.13.0",
-    "rimraf": "^2.6.2",
+    "rimraf": "^3.0.0",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
     "tslint": "^5.11.0",
