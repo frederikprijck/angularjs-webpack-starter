@@ -15,7 +15,7 @@ notifications:
     on_failure: change
 
 node_js:
-  - '6'
+  - '10'
 
 before_install:
   - export CHROME_BIN=chromium-browser
