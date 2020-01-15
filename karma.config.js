@@ -2,11 +2,11 @@ module.exports = function(config) {
 
   var browsers = ['PhantomJS'];
 
-  if (process.env.TRAVIS) {
+  /*if (process.env.TRAVIS) {
     browsers.push('Chrome_Travis');
   } else {
     browsers.push('Chrome');
-  }
+  }*/
 
   config.set({
     singleRun: true,
