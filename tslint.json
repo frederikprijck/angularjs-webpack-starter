@@ -7,8 +7,7 @@
     ],
     "class-name": true,
     "comment-format": [true,
-      "check-space",
-      "check-lowercase"
+      "check-space"
     ],
     "curly": true,
     "eofline": true,
@@ -43,7 +42,6 @@
     "trailing-comma": true,
     "no-trailing-whitespace": true,
     "no-unused-expression": true,
-    "no-use-before-declare": true,
     "no-var-requires": true,
     "one-line": [true,
       "check-open-brace",

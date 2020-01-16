@@ -21,39 +21,32 @@ module.exports = function(config) {
     },
 
     frameworks: [
-      'jasmine'
+      'jasmine',
+      '@angular-devkit/build-angular'
     ],
 
-    files: [
-      './src/index.spec.js'
-    ],
+    reporters: ['progress', 'kjhtml'],
 
-    reporters: ['progress', 'coverage'],
-
-    preprocessors: {
-      './src/index.spec.js': ['coverage', 'webpack', 'sourcemap'],
-    },
-
-    webpack: require('./webpack-test.config'),
-
-    webpackMiddleware: {
-      stats: 'errors-only'
-    },
-
-    coverageReporter: {
+    /*coverageReporter: {
       type: 'json',
       subdir: '.',
-      dir: 'build/coverage/',
+      dir: 'dist/coverage/',
       file: 'coverage.json'
+    },*/
+    
+    coverageIstanbulReporter: {
+      dir: require('path').join(__dirname, './coverage/angularjs-webpack-starter'),
+      reports: ['html', 'lcovonly', 'text-summary'],
+      fixWebpackSourcePaths: true
     },
 
     plugins: [
       require('karma-jasmine'),
-      require('karma-coverage'),
       require('karma-phantomjs-launcher'),
       require('karma-chrome-launcher'),
-      require('karma-webpack'),
-      require('karma-sourcemap-loader')
+      require('karma-jasmine-html-reporter'),
+      require('karma-coverage-istanbul-reporter'),
+      require('@angular-devkit/build-angular/plugins/karma')
     ]
   });
 };

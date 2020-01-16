@@ -19,7 +19,7 @@ class AddContactFormController {
 export class AddContactForm implements angular.IComponentOptions {
   static selector = 'addContactForm';
 
-  static template = require('./add-contact-form.component.html');
+  static template = require('raw-loader!./add-contact-form.component.html').default;
   static bindings = {
     contactAdded: '&'
   };

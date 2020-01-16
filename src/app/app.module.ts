@@ -1,15 +1,18 @@
-// temporary, until https://github.com/Microsoft/TypeScript/issues/10178 is implemented
-import * as angular from 'angular';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { UpgradeModule } from '@angular/upgrade/static';
 
-/**
- * Import Application Modules
- */
-import { moduleName as coreModule } from './core/core.module';
-import { moduleName as contactsModule } from './contacts/contacts.module';
+import { moduleName as ajsAppModuleName } from './app.module.ajs';
 
-export const moduleName =
-  angular.module('application', [
-    coreModule,
-    contactsModule
-  ])
-  .name;
+@NgModule({
+  imports: [
+    BrowserModule,
+    UpgradeModule
+  ],
+})
+export class AppModule {
+    constructor(private upgrade: UpgradeModule) { }
+    ngDoBootstrap() {
+        this.upgrade.bootstrap(document.documentElement, [ajsAppModuleName]);
+    }
+}
